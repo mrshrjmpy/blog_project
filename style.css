@@ -1,0 +1,109 @@
+:root {
+--first-color: #f8e7d3;
+--second-color: #b89474;
+--font-color: #2f2820;
+}
+
+@font-face {
+  font-family: my-cool-font;
+  src: url("font/Typo_Round_Regular_Demo.otf");
+}
+
+.header {
+    font-size: 2.5em;
+}
+
+svg {
+    width: 5em;
+}
+
+a {
+color: blue;
+}
+body {
+    display: grid;
+    grid-template-columns:40% 60%;
+    background-color: var(--first-color);
+    color: var(--font-color);
+    font-family: my-cool-font, Arial, Helvetica, sans-serif;
+}
+
+.left {
+    background-image: url("img/back_img.jpg");
+    background-size: cover; 
+    height: 100vh;
+    background-position: center;
+   
+}
+
+.banner {
+    background-color: var(--second-color);
+    height: 10vh;
+    margin-top: 20vh;
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+}
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.form_inputs {
+
+}
+
+.blogpoint{
+    align-self: center;
+}
+
+input {
+    background-color: #d6ceb7;
+    border: none;
+    height: 2em;
+    width: 20em;
+    margin-top: 0.5em;
+}
+
+button {
+    font-size: 1em;
+    border-radius: 0.5em;
+    background-color:  #d6ceb7;
+    border: none;
+    height: 2em;
+    width: 10em;
+    margin: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+}
+
+
+
+.input:user-invalid
+{
+    border: solid 0.02em;
+    border-color: red;
+}
+
+.input:user-valid
+{
+    border: solid 0.02em;
+    border-color: green;
+}
+
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+p {
+    padding: 1em;
+}
