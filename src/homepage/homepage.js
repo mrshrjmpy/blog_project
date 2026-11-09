@@ -23,3 +23,13 @@ function printPostList(){
 }
 
 printPostList();
+
+let profile_link = document.getElementById("profile_link");
+profile_link.addEventListener("click", () => {
+    window.location.href = "./profile.html";
+})
+
+let create_link = document.getElementById("create_link");
+create_link.addEventListener("click", () => {
+    window.location.href = "./create.html";
+})
