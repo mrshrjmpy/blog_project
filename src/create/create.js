@@ -10,3 +10,13 @@ submit.addEventListener("click", () => {
     console.log(post.postList);
 })
 
+let profile_link = document.getElementById("profile_link");
+profile_link.addEventListener("click", () => {
+    window.location.href = "./profile.html";
+})
+
+
+let homepage_link = document.getElementById("homepage_link");
+homepage_link.addEventListener("click", () => {
+    window.location.href = "./homepage.html";
+})

@@ -8,7 +8,8 @@ export default {
     login: "./src/index.js",
     homepage: "./src/homepage/homepage.js",
     profile: "./src/profile/profile.js",
-    create: "./src/create/create.js"
+    create: "./src/create/create.js",
+    postview: "./src/postview/postview.js",
   },
   output: {
     filename: "[name].js",
@@ -43,6 +44,12 @@ export default {
       template: "./src/create/create.html",
       chunks: ["create"],
     }),
+    new HtmlWebpackPlugin({
+      title: "postview",
+      filename: "postview.html",
+      template: "./src/postview/postview.html",
+      chunks: ["postview"],
+    }),
   ],
   module: {
     rules: [
@@ -69,6 +76,7 @@ export default {
           path.resolve(import.meta.dirname, "src/homepage/homepage.html"),
           path.resolve(import.meta.dirname, "src/profile/profile.html"),
           path.resolve(import.meta.dirname, "src/create/create.html"),
+          path.resolve(import.meta.dirname, "src/postview/postview.html"),
         ]
       },
     ],
